@@ -54,6 +54,7 @@ body {
 }
 .serie__more-info > p {
   font-family: B612-Regular;
+  line-height: 32px;
 }
 .serie__more-info > .more-info__informations {
   display: flex;
