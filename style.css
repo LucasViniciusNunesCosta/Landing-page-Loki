@@ -1,0 +1,91 @@
+@font-face {
+  font-family: B612-Bold;
+  src: url("fontes/B612-Bold.ttf");
+}
+@font-face {
+  font-family: B612-Regular;
+  src: url("fontes/B612-Regular.ttf");
+}
+body {
+  /**background-image: url("image/fundo.jpg");**/
+  background-color: black;
+  background-size: contain;
+  color: #fff;
+  font-family: arial;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.635)),
+    url(image/fundo.jpg);
+  background-size: cover;
+  background-color: black;
+}
+.container__root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__root > .container__titulo > p {
+  font-family: B612-Bold;
+  font-size: 20px;
+}
+.container__root > .container__titulo > h1 {
+  font-family: B612-Bold;
+  font-size: 96px;
+}
+.container__root > .container__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__serie {
+  display: flex;
+  height: 40vh;
+  gap: 4rem;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.container__serie > .serie__image > img {
+  height: 40vh;
+  width: auto;
+}
+.serie__more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.serie__more-info > p {
+  font-family: B612-Regular;
+}
+.serie__more-info > .more-info__informations {
+  display: flex;
+  justify-content: space-between;
+}
+.serie__more-info > .more-info__informations > .informations__duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: B612-Bold;
+  font-size: 24px;
+}
+.serie__more-info > .more-info__informations > .informations__year{
+    font-family: B612-Bold;
+    font-size: 24px;
+}
+.serie__more-info > .more-info__informations > .informations__stars > svg {
+  fill: #ffff00;
+}
+.serie__more-info > .more-info__informations > .informations__stars > svg:last-child {
+  fill: #ffffff80;
+}
+.serie__more-info > .serie__butons > a {
+  padding: 15px 27px 15px 27px;
+  background-color: #0072d2;
+  color: #fff;
+  margin-right: 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.serie__more-info > .serie__butons > a:nth-child(2) {
+  background-color: #131318;
+  border: solid 1px #fff;
+}
